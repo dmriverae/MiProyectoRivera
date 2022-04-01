@@ -1,12 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
+import React, { Component } from 'react'
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavBarComp from './components/NavBarComp';
+import CartWidget from './components/CartWidget';
+import ItemListContainer from './components/ItemListContainer';
+
+function App(){
+  return(
     <div className="App">
-      hola mundo, es mi entregable 1
+      <NavBarComp/> 
+      <CartWidget/> 
+      <ItemListContainer/> 
     </div>
+    
   );
 }
 
-export default App;
+export default App; 
